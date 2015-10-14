@@ -51,13 +51,6 @@
 			return mcrypt_decrypt(MCRYPT_RIJNDAEL_256, $this->_salt, $str, MCRYPT_MODE_ECB, mcrypt_create_iv(mcrypt_get_iv_size(MCRYPT_RIJNDAEL_256, MCRYPT_MODE_ECB), MCRYPT_RAND));
 		}
 		
-		public function __toString() {
-			$temp_str = "SALT: " . $this->_salt . "<br />Base64: " ;
-			$temp_str .= $this->_base_64 ? 'true' : 'false';
-			$temp_str .= "<br />";
-			return $temp_str;
-		}
-		
 	}
 
 ?>
