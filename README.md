@@ -7,7 +7,7 @@ $p1 = new jCrypt();
 $plain_text = "123mypassword";
 $encrypted_text = $p1->jEncrypt($plain_text);
 $decrpted_text = $p1->jDecrypt($encrypted_text);
-//$encrypted_text is the encrpted version of $plain_text and $decrypted_text
+//$encrypted_text is the encrypted version of $plain_text and $decrypted_text
 //$decrpted_text is just the same with $plain_text but was encrpted first then decrypted back
 $p1->isMatch($encrypted_text, $decrpted_text); //returns true
 $p1->isMatch($decrpted_text, $encrypted_text); //returns true
