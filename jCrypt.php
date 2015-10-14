@@ -61,15 +61,3 @@
 	}
 
 ?>
-
-
-<?php
-
-	$p = new jCrypt("dfsdfsd");
-	$plain = "123password";
-	echo $p;
-	$enc = $p->jEncrypt($plain);
-	$dec = $p->jDecrypt($enc);
-	echo "Plain: " . $plain . "<br />Encrypted: " . $enc . "<br />Decrypted: " . $dec . "<br />";
-
-?>
