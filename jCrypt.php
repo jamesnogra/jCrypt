@@ -25,9 +25,7 @@
 		
 		/**
 		 * Checks if a encrypted string is the same as the plain text
-		 * 
 		 * Param: Encrypted String and a Plain String (positions interchangeable)
-		 * 
 		 * Return: Boolean
 		 */
 		public function isMatch($str1, $str2) {
